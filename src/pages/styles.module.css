@@ -6,10 +6,12 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
+  padding: 10rem;
   text-align: center;
   position: relative;
   overflow: hidden;
+  color: white;
+  background-color: cornflowerblue;
 }
 
 @media screen and (max-width: 966px) {
@@ -34,4 +36,15 @@
 .featureImage {
   height: 200px;
   width: 200px;
+}
+
+.sectionImage {
+  height: 300px;
+  width: 300px;
+}
+
+.sectionText {
+  display: flex !important;
+  flex-flow: column;
+  justify-content: center;
 }

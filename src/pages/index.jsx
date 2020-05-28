@@ -13,7 +13,7 @@ const features = [
     description: (
       <>
         Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.{" "}
+        used to get your website up and running quickly.
       </>
     ),
   },
@@ -23,8 +23,8 @@ const features = [
     description: (
       <>
         Docusaurus lets you focus on your docs, and we & apos; ll do the
-        chores.Go ahead and move your docs into the <code> docs </code>{" "}
-        directory.{" "}
+        chores.Go ahead and move your docs into the <code> docs </code>
+        directory.
       </>
     ),
   },
@@ -34,7 +34,7 @@ const features = [
     description: (
       <>
         Extend or customize your website layout by reusing React.Docusaurus can
-        be extended while reusing the same header and footer.{" "}
+        be extended while reusing the same header and footer.
       </>
     ),
   },
@@ -44,13 +44,12 @@ function Feature({ imageUrl, title, description }) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
     <div className={classnames("col col--4", styles.feature)}>
-      {" "}
       {imgUrl && (
         <div className="text--center">
-          <img className={styles.featureImage} src={imgUrl} alt={title} />{" "}
+          <img className={styles.featureImage} src={imgUrl} alt={title} />
         </div>
-      )}{" "}
-      <h3> {title} </h3> <p> {description} </p>{" "}
+      )}
+      <h3> {title} </h3> <p> {description} </p>
     </div>
   );
 }
@@ -65,36 +64,61 @@ function Home() {
     >
       <header className={classnames("hero hero--primary", styles.heroBanner)}>
         <div className="container">
-          <h1 className="hero__title"> {siteConfig.title} </h1>{" "}
-          <p className="hero__subtitle"> {siteConfig.tagline} </p>{" "}
+          <h1 className="hero__title"> {siteConfig.title} </h1>
+          <p className="hero__subtitle"> {siteConfig.tagline} </p>
           <div className={styles.buttons}>
             <Link
               className={classnames(
                 "button button--outline button--secondary button--lg",
                 styles.getStarted
               )}
-              to={useBaseUrl("docs/")}
+              to={useBaseUrl("courses/")}
             >
-              Start Learning{" "}
-            </Link>{" "}
-          </div>{" "}
-        </div>{" "}
-      </header>{" "}
+              Start Learning
+            </Link>
+          </div>
+        </div>
+      </header>
       <main>
-        {" "}
+        <section style={{ padding: "10rem" }} className={styles.features}>
+          <div className="container">
+            <div className="row">
+              <div className="col col--6">
+                <div className="text--center">
+                  <img
+                    className={styles.sectionImage}
+                    src={"img/community.svg"}
+                    alt={""}
+                  />
+                </div>
+              </div>
+              <div className={classnames(styles.sectionText, "col col--6")}>
+                <div>
+                  <h2> a community to belong</h2>
+                  <p>
+                    got stuck while doing a course, don't know where to ask?
+                    here you have a community of 5000+ folks doing the same
+                    course. Opportunity to make friends amongst like minded
+                    people.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr />
         {features && features.length > 0 && (
           <section className={styles.features}>
             <div className="container">
               <div className="row">
-                {" "}
                 {features.map((props, idx) => (
                   <Feature key={idx} {...props} />
-                ))}{" "}
-              </div>{" "}
-            </div>{" "}
+                ))}
+              </div>
+            </div>
           </section>
-        )}{" "}
-      </main>{" "}
+        )}
+      </main>
     </Layout>
   );
 }
