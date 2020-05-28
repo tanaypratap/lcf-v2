@@ -1,7 +1,7 @@
 module.exports = {
   title: "learncodingfree",
   tagline: "need to come up with a tagline",
-  url: "https://learncodingfre.org",
+  url: "https://beta.learncodingfree.org",
   baseUrl: "/",
   favicon: "img/favicon.ico",
   organizationName: "learncodingfree", // Usually your GitHub org/user name.
@@ -13,8 +13,7 @@ module.exports = {
         alt: "learncodingfree logo",
         src: "img/logo.svg",
       },
-      links: [
-        {
+      links: [{
           to: "courses/",
           activeBasePath: "courses",
           label: "Courses",
@@ -46,11 +45,9 @@ module.exports = {
     },
     footer: {
       style: "dark",
-      links: [
-        {
+      links: [{
           title: "Docs",
-          items: [
-            {
+          items: [{
               label: "Style Guide",
               to: "docs/",
             },
@@ -62,8 +59,7 @@ module.exports = {
         },
         {
           title: "Community",
-          items: [
-            {
+          items: [{
               label: "Stack Overflow",
               href: "https://stackoverflow.com/questions/tagged/docusaurus",
             },
@@ -79,8 +75,7 @@ module.exports = {
         },
         {
           title: "More",
-          items: [
-            {
+          items: [{
               label: "Blog",
               to: "blog",
             },
@@ -105,15 +100,13 @@ module.exports = {
           routeBasePath: "courses",
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/", // TODO
+          editUrl: "https://github.com/facebook/docusaurus/edit/master/website/", // TODO
         },
         blog: {
           routeBasePath: "mentorship",
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/blog/", // TODO
+          editUrl: "https://github.com/facebook/docusaurus/edit/master/website/blog/", // TODO
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -133,8 +126,7 @@ module.exports = {
          * URL for editing a podcasts post.
          * Example: 'https://github.com/facebook/docusaurus/edit/master/website/podcasts/'
          */
-        editUrl:
-          "https://github.com/facebook/docusaurus/edit/master/website/podcasts/",
+        editUrl: "https://github.com/facebook/docusaurus/edit/master/website/podcasts/",
         /**
          * URL route for the podcasts section of your site.
          * *DO NOT* include a trailing slash.
@@ -194,8 +186,7 @@ module.exports = {
          * URL for editing a faqs post.
          * Example: 'https://github.com/facebook/docusaurus/edit/master/website/faqs/'
          */
-        editUrl:
-          "https://github.com/facebook/docusaurus/edit/master/website/faqs/",
+        editUrl: "https://github.com/facebook/docusaurus/edit/master/website/faqs/",
         /**
          * URL route for the faqs section of your site.
          * *DO NOT* include a trailing slash.
