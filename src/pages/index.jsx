@@ -54,6 +54,8 @@ function Feature({ imageUrl, title, description }) {
   );
 }
 
+// TODO: Add a section that the approach is more hands-on and practical,
+// you create and host your projects.
 function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
@@ -80,7 +82,7 @@ function Home() {
         </div>
       </header>
       <main>
-        <section style={{ padding: "10rem" }} className={styles.features}>
+        <section style={{ padding: "6rem" }} className={styles.features}>
           <div className="container">
             <div className="row">
               <div className="col col--6">
@@ -97,16 +99,27 @@ function Home() {
                   <h2> a community to belong</h2>
                   <p>
                     got stuck while doing a course, don't know where to ask?
-                    here you have a community of 5000+ folks doing the same
-                    course. Opportunity to make friends amongst like minded
+                    here you have a community of 1000s of students doing the
+                    same course. Opportunity to make friends amongst like minded
                     people.
                   </p>
+
+                  <div>
+                    <a
+                      className={classnames(
+                        "button button--outline button--secondary button--lg"
+                      )}
+                      href="https://discord.gg/8kxPPYK"
+                    >
+                      Join the Discord Community
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <hr />
+        {/* <hr />
         {features && features.length > 0 && (
           <section className={styles.features}>
             <div className="container">
@@ -117,7 +130,7 @@ function Home() {
               </div>
             </div>
           </section>
-        )}
+        )} */}
       </main>
     </Layout>
   );
